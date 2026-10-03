@@ -1,7 +1,7 @@
 {
-  "versionCode": 2,
-  "versionName": "2.1.0",
-  "downloadUrl": "https://github.com/xharma/CB-Bloat-Remover/releases/download/v2.1.0/CB-Bloat-Remover.zip",
-  "releaseNotes": "Desktop v2.1.0 update: Added automatic app check on phone, update notification, and UI enhancements.",
+  "versionCode": 1,
+  "versionName": "1.0",
+  "downloadUrl": "https://sourceforge.net/projects/bloat-remover/files/Desktop/",
+  "releaseNotes": "Desktop v1.0 update: Added automatic app check on phone, update notification, and UI enhancements.",
   "forceUpdate": false
 }

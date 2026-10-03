@@ -1,7 +1,7 @@
 {
-  "desktopVersionCode": 2,
-  "desktopVersionName": "2.0.0",
-  "desktopDownloadUrl": "https://github.com/xharma/CB-Bloat-Remover/releases/download/v2.0.0/CB-Bloat-Remover.zip",
+  "desktopVersionCode": 1,
+  "desktopVersionName": "1.0",
+  "desktopDownloadUrl": "https://sourceforge.net/projects/bloat-remover/files/Desktop/",
   "title": "Download Desktop Companion App",
   "description": "To safely uninstall system apps, download the CB Bloat Remover Desktop Companion on your PC.",
   "releaseNotes": "Features ADB auto-connection, socket server synchronization, and bulk package removal."
