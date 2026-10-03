@@ -10,3 +10,7 @@ Root Directory: https://akxhay.github.io/cb_public_urls/
 ### CB Files
 - **Child Safety Standards**: https://akxhay.github.io/cb_public_urls/applications/cbfiles/child-safety.html
 - **Privacy Policy**: https://akxhay.github.io/cb_public_urls/applications/cbfiles/privacy-policy.html
+
+### CB Bloat Remover
+- **Child Safety Standards**: https://akxhay.github.io/cb_public_urls/applications/cbbloatremover/child-safety.html
+- **Privacy Policy**: https://akxhay.github.io/cb_public_urls/applications/cbbloatremover/privacy-policy.html
