@@ -14,3 +14,5 @@ Root Directory: https://akxhay.github.io/cb_public_urls/
 ### CB Bloat Remover
 - **Child Safety Standards**: https://akxhay.github.io/cb_public_urls/applications/cbbloatremover/child-safety.html
 - **Privacy Policy**: https://akxhay.github.io/cb_public_urls/applications/cbbloatremover/privacy-policy.html
+- **Desktop Config**: https://akxhay.github.io/cb_public_urls/config/bloatremover/desktop_config.json
+- **Android Config**: https://akxhay.github.io/cb_public_urls/config/bloatremover/android_config.json
