@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>xharma Public Resources & Directory</title>
-    <meta name="description" content="Official public directory for xharma app policies, safety standards, legal disclosures, and ad verification files.">
+    <title>xharma — Apps & Public Resources</title>
+    <meta name="description" content="Discover xharma apps on Google Play and access official privacy policies, child safety standards, and public resources.">
     <meta name="author" content="xharma">
-    <meta property="og:title" content="xharma Public Resources & Directory">
-    <meta property="og:description" content="Public documentation hub for Chat bin and other xharma applications.">
+    <meta property="og:title" content="xharma — Apps & Public Resources">
+    <meta property="og:description" content="Explore xharma apps and access official policies and public resources.">
     <meta property="og:type" content="website">
 
     <!-- Fonts -->
@@ -705,6 +705,353 @@
             transform: translateY(0);
             opacity: 1;
         }
+
+        /* Refined public directory layout */
+        [data-theme="light"] {
+            --bg-body: #f3f6fb;
+            --bg-card: rgba(255, 255, 255, 0.96);
+            --bg-card-hover: #ffffff;
+            --bg-element: #f7f9fc;
+            --bg-element-hover: #eef3fb;
+            --border-color: #e2e8f0;
+            --border-highlight: rgba(37, 99, 235, 0.32);
+            --text-main: #14213a;
+            --text-muted: #53627a;
+            --text-subtle: #8190a7;
+            --primary: #2563eb;
+            --primary-light: #2563eb;
+            --primary-glow: rgba(37, 99, 235, 0.16);
+            --badge-bg: rgba(37, 99, 235, 0.08);
+            --badge-text: #1d4ed8;
+            --shadow-sm: 0 8px 24px rgba(23, 42, 75, 0.05);
+            --shadow-lg: 0 18px 46px rgba(23, 42, 75, 0.1);
+        }
+
+        [data-theme="light"] header {
+            background: rgba(255, 255, 255, 0.88);
+        }
+
+        [data-theme="dark"] header {
+            background: rgba(9, 13, 22, 0.92);
+        }
+
+        [data-theme="light"] .hero {
+            background:
+                radial-gradient(ellipse at 92% 8%, rgba(99, 102, 241, 0.12), transparent 36%),
+                linear-gradient(135deg, #ffffff 0%, #f7faff 58%, #f0f5ff 100%);
+        }
+
+        [data-theme="dark"] .hero {
+            background:
+                radial-gradient(ellipse at 92% 8%, rgba(99, 102, 241, 0.22), transparent 36%),
+                linear-gradient(135deg, rgba(19, 26, 42, 0.96), rgba(17, 26, 47, 0.96) 58%, rgba(25, 31, 58, 0.96));
+        }
+
+        [data-theme="dark"] .hero-eyebrow {
+            color: #b9c7e2;
+        }
+
+        [data-theme="dark"] .hero-button-secondary {
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        [data-theme="dark"] .stat-icon {
+            background: rgba(99, 102, 241, 0.14);
+            color: #a5b4fc;
+        }
+
+        [data-theme="dark"] .resource-path {
+            background: rgba(0, 0, 0, 0.14);
+        }
+
+        body::before {
+            top: -260px;
+            left: auto;
+            right: -100px;
+            width: 600px;
+            height: 600px;
+            opacity: 0.65;
+        }
+
+        body::after {
+            opacity: 0.45;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(18px);
+        }
+
+        .hero {
+            position: relative;
+            overflow: hidden;
+            margin: 36px 0 28px;
+            padding: clamp(32px, 6vw, 64px);
+            text-align: left;
+            border: 1px solid var(--border-color);
+            border-radius: 28px;
+            background:
+                radial-gradient(ellipse at 92% 8%, rgba(99, 102, 241, 0.12), transparent 36%),
+                linear-gradient(135deg, #ffffff 0%, #f7faff 58%, #f0f5ff 100%);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .hero::after {
+            content: "xh";
+            position: absolute;
+            right: 5%;
+            top: 50%;
+            transform: translateY(-55%);
+            color: rgba(37, 99, 235, 0.045);
+            font-size: clamp(10rem, 28vw, 23rem);
+            font-weight: 800;
+            letter-spacing: -0.12em;
+            line-height: 1;
+            pointer-events: none;
+        }
+
+        .hero > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            margin: 0 0 18px;
+            color: #31527f;
+            font-size: 0.76rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .hero-eyebrow::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #22a889;
+            box-shadow: 0 0 0 4px rgba(34, 168, 137, 0.12);
+        }
+
+        .hero-title {
+            max-width: 760px;
+            font-size: clamp(2.45rem, 6.4vw, 4.6rem);
+            letter-spacing: -0.065em;
+            line-height: 1.04;
+            margin-bottom: 20px;
+        }
+
+        .hero-title span {
+            background: linear-gradient(100deg, #2563eb, #0f9d8a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+            max-width: 600px;
+            margin: 0 0 28px;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .hero-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            min-height: 46px;
+            padding: 0 18px;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+        }
+
+        .hero-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .hero-button-primary {
+            color: #fff;
+            background: #1d4ed8;
+            box-shadow: 0 8px 18px rgba(29, 78, 216, 0.2);
+        }
+
+        .hero-button-primary:hover {
+            color: #fff;
+            background: #1e40af;
+        }
+
+        .hero-button-secondary {
+            color: var(--text-main);
+            background: rgba(255, 255, 255, 0.74);
+            border-color: var(--border-color);
+        }
+
+        .hero-button-secondary:hover {
+            color: var(--text-main);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .stats-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 14px;
+            margin-bottom: 44px;
+        }
+
+        .stat-card {
+            border-radius: 16px;
+            padding: 18px 20px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .stat-icon {
+            flex: 0 0 44px;
+            background: #edf3ff;
+            color: #2563eb;
+        }
+
+        .stat-val {
+            font-size: 1.35rem;
+            letter-spacing: -0.03em;
+        }
+
+        .controls-panel {
+            border-radius: 16px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .section-header {
+            margin-bottom: 18px;
+        }
+
+        .section-title {
+            letter-spacing: -0.035em;
+        }
+
+        .app-grid {
+            gap: 20px;
+        }
+
+        .app-card {
+            padding: clamp(20px, 3vw, 30px);
+            border-radius: 18px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .app-card:hover {
+            border-color: rgba(37, 99, 235, 0.24);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .app-header {
+            align-items: center;
+        }
+
+        .app-name {
+            letter-spacing: -0.035em;
+        }
+
+        .app-actions {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            gap: 9px;
+        }
+
+        .store-link,
+        .store-wip {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            min-height: 38px;
+            padding: 0 13px;
+            border-radius: 9px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .store-link {
+            color: #fff;
+            background: #172b4d;
+            transition: background var(--transition-fast), transform var(--transition-fast);
+        }
+
+        .store-link:hover {
+            color: #fff;
+            background: #2563eb;
+            transform: translateY(-1px);
+        }
+
+        .store-wip {
+            color: #815b12;
+            background: #fff7df;
+            border: 1px solid #f2dfaa;
+        }
+
+        .resource-card {
+            border-radius: 13px;
+        }
+
+        .resource-path {
+            background: #f4f7fb;
+        }
+
+        .footer-links {
+            justify-content: center;
+            flex-wrap: wrap;
+            row-gap: 10px;
+        }
+
+        @media (max-width: 767px) {
+            .hero {
+                margin-top: 24px;
+                border-radius: 20px;
+            }
+
+            .hero::after {
+                right: 2%;
+                top: 20%;
+                transform: none;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .app-header {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .app-actions {
+                justify-content: flex-start;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
     </style>
 </head>
 
@@ -756,10 +1103,25 @@
     <main class="wrapper">
         <!-- Hero Section -->
         <section class="hero">
-            <h1 class="hero-title">Public App Directory & <span>Resources</span></h1>
+            <p class="hero-eyebrow">Independent apps by xharma</p>
+            <h1 class="hero-title">Useful apps.<br>Clear, <span>trusted resources.</span></h1>
             <p class="hero-subtitle">
-                Official hub for developer disclosures, legal safety policies, ad seller verification files, and public assets hosted for xharma applications.
+                Explore the xharma app collection on Google Play, then find the official privacy, child-safety, and verification documents for each app in one place.
             </p>
+            <div class="hero-actions">
+                <a href="https://play.google.com/store/apps/developer?id=xharma" target="_blank" rel="noopener noreferrer" class="hero-button hero-button-primary">
+                    Explore all apps
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M7 17 17 7"></path><path d="M7 7h10v10"></path>
+                    </svg>
+                </a>
+                <a href="#app-grid" class="hero-button hero-button-secondary">
+                    Browse policies
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path>
+                    </svg>
+                </a>
+            </div>
         </section>
 
         <!-- Stats Overview -->
@@ -773,8 +1135,8 @@
                     </svg>
                 </div>
                 <div>
-                    <div class="stat-val">4</div>
-                    <div class="stat-label">Applications</div>
+                    <div class="stat-val">6</div>
+                    <div class="stat-label">Applications in this hub</div>
                 </div>
             </div>
 
@@ -789,8 +1151,8 @@
                     </svg>
                 </div>
                 <div>
-                    <div class="stat-val">11</div>
-                    <div class="stat-label">Public Documents</div>
+                    <div class="stat-val">15</div>
+                    <div class="stat-label">Policies & public resources</div>
                 </div>
             </div>
 
@@ -801,8 +1163,8 @@
                     </svg>
                 </div>
                 <div>
-                    <div class="stat-val">100%</div>
-                    <div class="stat-label">Safety Compliance</div>
+                    <div class="stat-val">One place</div>
+                    <div class="stat-label">Apps, policies & disclosures</div>
                 </div>
             </div>
         </div>
@@ -825,6 +1187,7 @@
                 <button class="filter-pill" data-filter="cb-bloat-remover">CB Bloat Remover</button>
                 <button class="filter-pill" data-filter="cbnotify">CB Notify</button>
                 <button class="filter-pill" data-filter="cbstrictalarm">CB Strict Alarm</button>
+                <button class="filter-pill" data-filter="cbbackup">CB Backup</button>
                 <button class="filter-pill" data-filter="policy">Safety & Privacy</button>
                 <button class="filter-pill" data-filter="ads">Ad Verification</button>
             </div>
@@ -855,9 +1218,17 @@
                             <p class="app-desc">Messaging & communications platform maintained by xharma</p>
                         </div>
                     </div>
-                    <span class="status-tag">
-                        <span class="status-dot"></span> Active App
-                    </span>
+                    <div class="app-actions">
+                        <span class="status-tag">
+                            <span class="status-dot"></span> Active App
+                        </span>
+                        <a href="https://play.google.com/store/apps/details?id=com.xharma.chatbin" target="_blank" rel="noopener noreferrer" class="store-link" aria-label="Get Chat bin on Google Play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M3.6 2.8c-.4.4-.6 1-.6 1.8v14.8c0 .8.2 1.4.6 1.8L12 12 3.6 2.8Zm1.2-.8L14 10.8l2.8-2.8L6.5 2.1c-.6-.3-1.2-.3-1.7-.1ZM17.7 9.1 14.5 12l3.2 2.9 3.1-1.7c1.3-.7 1.3-1.8 0-2.5l-3.1-1.6Zm-.9 6.3L14 12.9 4.8 22c.5.2 1.1.2 1.7-.1l10.3-6.5Z"></path>
+                            </svg>
+                            Google Play
+                        </a>
+                    </div>
                 </div>
 
                 <div class="resources-grid">
@@ -992,9 +1363,17 @@
                             <p class="app-desc">File management, audio, and device utility application maintained by xharma</p>
                         </div>
                     </div>
-                    <span class="status-tag">
-                        <span class="status-dot"></span> Active App
-                    </span>
+                    <div class="app-actions">
+                        <span class="status-tag">
+                            <span class="status-dot"></span> Active App
+                        </span>
+                        <a href="https://play.google.com/store/apps/details?id=com.xharma.cbgallery" target="_blank" rel="noopener noreferrer" class="store-link" aria-label="Get CB Files on Google Play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M3.6 2.8c-.4.4-.6 1-.6 1.8v14.8c0 .8.2 1.4.6 1.8L12 12 3.6 2.8Zm1.2-.8L14 10.8l2.8-2.8L6.5 2.1c-.6-.3-1.2-.3-1.7-.1ZM17.7 9.1 14.5 12l3.2 2.9 3.1-1.7c1.3-.7 1.3-1.8 0-2.5l-3.1-1.6Zm-.9 6.3L14 12.9 4.8 22c.5.2 1.1.2 1.7-.1l10.3-6.5Z"></path>
+                            </svg>
+                            Google Play · CB Files
+                        </a>
+                    </div>
                 </div>
 
                 <div class="resources-grid">
@@ -1088,9 +1467,17 @@
                             <p class="app-desc">Application maintained by xharma</p>
                         </div>
                     </div>
-                    <span class="status-tag">
-                        <span class="status-dot"></span> Active App
-                    </span>
+                    <div class="app-actions">
+                        <span class="status-tag">
+                            <span class="status-dot"></span> Active App
+                        </span>
+                        <a href="https://play.google.com/store/apps/details?id=com.xharma.cbbloatremover" target="_blank" rel="noopener noreferrer" class="store-link" aria-label="Get CB Bloat Remover on Google Play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M3.6 2.8c-.4.4-.6 1-.6 1.8v14.8c0 .8.2 1.4.6 1.8L12 12 3.6 2.8Zm1.2-.8L14 10.8l2.8-2.8L6.5 2.1c-.6-.3-1.2-.3-1.7-.1ZM17.7 9.1 14.5 12l3.2 2.9 3.1-1.7c1.3-.7 1.3-1.8 0-2.5l-3.1-1.6Zm-.9 6.3L14 12.9 4.8 22c.5.2 1.1.2 1.7-.1l10.3-6.5Z"></path>
+                            </svg>
+                            Google Play
+                        </a>
+                    </div>
                 </div>
                 <div class="resources-grid">
                     <div class="resource-card" data-tags="cb-bloat-remover cbbloatremover safety csae policy legal html" data-title="Child Safety Standards" data-path="applications/cbbloatremover/child-safety.html">
@@ -1248,9 +1635,12 @@
                             <p class="app-desc">Application maintained by xharma</p>
                         </div>
                     </div>
-                    <span class="status-tag">
-                        <span class="status-dot"></span> Active App
-                    </span>
+                    <div class="app-actions">
+                        <span class="status-tag">
+                            <span class="status-dot"></span> Active App
+                        </span>
+                        <span class="store-wip" aria-label="Google Play listing work in progress">WIP · Google Play</span>
+                    </div>
                 </div>
                 <div class="resources-grid">
                     <div class="resource-card" data-tags="cbnotify safety csae policy legal html" data-title="Child Safety Standards" data-path="applications/cbnotify/child-safety.html">
@@ -1332,9 +1722,12 @@
                             <p class="app-desc">Alarm application maintained by xharma</p>
                         </div>
                     </div>
-                    <span class="status-tag">
-                        <span class="status-dot"></span> Active App
-                    </span>
+                    <div class="app-actions">
+                        <span class="status-tag">
+                            <span class="status-dot"></span> Active App
+                        </span>
+                        <span class="store-wip" aria-label="Google Play listing work in progress">WIP · Google Play</span>
+                    </div>
                 </div>
                 <div class="resources-grid">
                     <div class="resource-card" data-tags="cbstrictalarm cb-strict-alarm cb strict alarm safety csae policy legal html" data-title="Child Safety Standards" data-path="applications/cbstrictalarm/child-safety.html">
@@ -1406,6 +1799,98 @@
                 </div>
             </article>
 
+            <!-- CB Backup App Card -->
+            <article class="app-card" data-app="cbbackup">
+                <div class="app-header">
+                    <div class="app-info">
+                        <div class="app-logo" style="background: linear-gradient(135deg, #10b981 0%, #047857 100%); box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);">CB</div>
+                        <div>
+                            <h3 class="app-name">CB Backup</h3>
+                            <p class="app-desc">Backup and restore application maintained by xharma</p>
+                        </div>
+                    </div>
+                    <div class="app-actions">
+                        <span class="status-tag">
+                            <span class="status-dot"></span> Active App
+                        </span>
+                        <a href="https://play.google.com/store/apps/details?id=com.xharma.cbbackup" target="_blank" rel="noopener noreferrer" class="store-link" aria-label="Get CB Backup on Google Play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M3.6 2.8c-.4.4-.6 1-.6 1.8v14.8c0 .8.2 1.4.6 1.8L12 12 3.6 2.8Zm1.2-.8L14 10.8l2.8-2.8L6.5 2.1c-.6-.3-1.2-.3-1.7-.1ZM17.7 9.1 14.5 12l3.2 2.9 3.1-1.7c1.3-.7 1.3-1.8 0-2.5l-3.1-1.6Zm-.9 6.3L14 12.9 4.8 22c.5.2 1.1.2 1.7-.1l10.3-6.5Z"></path>
+                            </svg>
+                            Google Play
+                        </a>
+                    </div>
+                </div>
+                <div class="resources-grid">
+                    <div class="resource-card" data-tags="cbbackup cb-backup backup safety csae policy legal html" data-title="Child Safety Standards" data-path="applications/cbbackup/child-safety.html">
+                        <div>
+                            <div class="resource-card-top">
+                                <div class="resource-icon html-type" style="background: rgba(16, 185, 129, 0.12); color: #059669;">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                    </svg>
+                                </div>
+                                <span class="type-badge">HTML Document</span>
+                            </div>
+                            <h4 class="resource-title">Child Safety Standards</h4>
+                            <p class="resource-desc">CSAE zero-tolerance policy, reporting information, and child-safety standards.</p>
+                        </div>
+                        <div>
+                            <div class="resource-path">./applications/cbbackup/child-safety.html</div>
+                            <div class="resource-actions">
+                                <a href="./applications/cbbackup/child-safety.html" class="btn btn-primary" target="_blank">
+                                    <span>View Document</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                                <button class="btn btn-secondary copy-btn" data-url="applications/cbbackup/child-safety.html" title="Copy full URL">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resource-card" data-tags="cbbackup cb-backup backup policy privacy legal html" data-title="Privacy Policy" data-path="applications/cbbackup/privacy-policy.html">
+                        <div>
+                            <div class="resource-card-top">
+                                <div class="resource-icon html-type" style="background: rgba(16, 185, 129, 0.12); color: #059669;">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                    </svg>
+                                </div>
+                                <span class="type-badge">HTML Document</span>
+                            </div>
+                            <h4 class="resource-title">Privacy Policy</h4>
+                            <p class="resource-desc">Information about backup data handling, log data, security, and privacy practices.</p>
+                        </div>
+                        <div>
+                            <div class="resource-path">./applications/cbbackup/privacy-policy.html</div>
+                            <div class="resource-actions">
+                                <a href="./applications/cbbackup/privacy-policy.html" class="btn btn-primary" target="_blank">
+                                    <span>View Document</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                                <button class="btn btn-secondary copy-btn" data-url="applications/cbbackup/privacy-policy.html" title="Copy full URL">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
         </div>
 
         <!-- Empty State for no search results -->
@@ -1448,6 +1933,10 @@
                     <span>•</span>
                     <a href="./applications/cbstrictalarm/privacy-policy.html" class="footer-link">CB Strict Alarm Privacy</a>
                     <span>•</span>
+                    <a href="./applications/cbbackup/child-safety.html" class="footer-link">CB Backup Safety</a>
+                    <span>•</span>
+                    <a href="./applications/cbbackup/privacy-policy.html" class="footer-link">CB Backup Privacy</a>
+                    <span>•</span>
                     <a href="./applications/chatbin/app-ads.txt" class="footer-link">App-Ads.txt</a>
                     <span>•</span>
                     <a href="https://github.com/akxhay/cb_public_urls" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Repository</a>
@@ -1480,7 +1969,7 @@
             let activeFilter = 'all';
 
             // Theme Switcher Logic
-            const savedTheme = localStorage.getItem('theme') || 'dark';
+            const savedTheme = localStorage.getItem('theme') || 'light';
             setTheme(savedTheme);
 
             themeToggle.addEventListener('click', () => {
