@@ -20,3 +20,7 @@ Root Directory: https://akxhay.github.io/cb_public_urls/
 ### CB Notify
 - **Child Safety Standards**: https://akxhay.github.io/cb_public_urls/applications/cbnotify/child-safety.html
 - **Privacy Policy**: https://akxhay.github.io/cb_public_urls/applications/cbnotify/privacy-policy.html
+
+### CB Strict Alarm
+- **Child Safety Standards**: https://akxhay.github.io/cb_public_urls/applications/cbstrictalarm/child-safety.html
+- **Privacy Policy**: https://akxhay.github.io/cb_public_urls/applications/cbstrictalarm/privacy-policy.html
